@@ -1,0 +1,46 @@
+package com.ghgj.lesson2.day4;
+
+import java.util.Scanner;
+
+public class Shop {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Shop.query();
+	}
+
+	public static void query() {
+		System.out.println("ÇëÑ¡Ôñ¹ºÂòµÄÉÌÆ·±àºÅ£º");
+		System.out.println("1.TĞô\t2.ÍøÇòĞ¬\t3.ÍøÇòÅÄ");
+		System.out.println("*************************************");
+		boolean flag = true;
+		while(flag) {
+		System.out.println("ÇëÊäÈëÉÌÆ·±àºÅ£º");
+		Scanner sc = new Scanner(System.in);
+		int a = sc.nextInt(); 
+		if(a==1 ) {
+			System.out.println("TĞô\t£¤"+245);
+		
+			
+		}else if(a==2) {
+			System.out.println("ÍøÇòĞ¬\t£¤"+570);
+		
+			
+		}else if(a==3) {
+			System.out.println("ÍøÇòÅÄ\t£¤"+320);
+			
+			
+		}else {
+			System.out.println("ÇëÕıÈ·ÊäÈë£¡");
+		}
+		
+		System.out.println("ÊÇ·ñ¼ÌĞø£¨y/n£©");
+		String st = sc.next();
+		if(st.equals("n")) {
+			System.out.println("³ÌĞò½áÊø£¡");
+			flag = false;}
+	  }
+		
+		
+	}
+}

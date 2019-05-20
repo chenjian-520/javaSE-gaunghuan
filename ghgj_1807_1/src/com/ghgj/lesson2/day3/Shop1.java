@@ -1,0 +1,190 @@
+package com.ghgj.lesson2.day3;
+
+import java.util.Scanner;
+
+
+public class Shop1 {
+	public static void main(String[] agrs) {
+		Shop1.demo6();
+		
+	}
+	
+	public static void demo6() {
+		
+		System.out.println("请输入消费金额");
+		Scanner sc = new Scanner(System.in);
+		double money = sc.nextInt();
+		
+		System.out.println("是否参加换购活动：");
+		System.out.println("1:满50元，加2元换购百事可乐饮料一瓶");
+		System.out.println("2:满100元，加3元换购500ml可乐一瓶");
+		System.out.println("3:满100元，加10元换购5公斤面粉");
+		System.out.println("4:满200元，加10元换购一个苏波尔炒菜锅");
+		System.out.println("5:满200元，加20元换购欧莱雅爽肤水饮料一瓶");
+		System.out.println("0:不换购");
+		System.out.println("请选择：");
+		int  xz = sc.nextInt();
+		
+		if(xz == 0) {
+			System.out.println("本次消费金额为："+money);
+		}else if(money<50) {
+			switch(xz) {
+			case 1:System.out.println("本次消费金额为："+money);
+			System.out.println("换购失败！");
+				break;
+			case 2:System.out.println("本次消费金额为："+money);
+			System.out.println("换购失败！");
+				break;
+			case 3:System.out.println("本次消费金额为："+money);
+			System.out.println("换购失败！");
+				break;
+			case 4:System.out.println("本次消费金额为："+money);
+			System.out.println("换购失败！");
+				break;
+			case 5:System.out.println("本次消费金额为："+money);
+			System.out.println("换购失败！");
+				break;
+			default:System.out.println("换购失败！");
+			break;
+				
+			}
+		}else if(money<100) {
+			switch(xz) {
+			case 1:System.out.println("本次消费金额为："+(money+2));
+					System.out.println("成功换购百事可乐饮料一瓶");
+				break;
+			case 2:System.out.println("本次消费金额为："+money);
+			System.out.println("换购失败！");
+				break;
+			case 3:System.out.println("本次消费金额为："+money);
+			System.out.println("换购失败！");
+				break;
+			case 4:System.out.println("本次消费金额为："+money);
+			System.out.println("换购失败！");
+				break;
+			case 5:System.out.println("本次消费金额为："+money);
+			System.out.println("换购失败！");
+				break;
+			default:System.out.println("换购失败！");
+			break;
+			}
+		}else if(money<200) {
+			switch(xz) {
+			case 1:System.out.println("本次消费金额为："+(money+2));
+				   System.out.println("成功换购百事可乐饮料一瓶");
+				break;
+			case 2:System.out.println("本次消费金额为："+(money+3));
+			       System.out.println("成功换购500ml可乐一瓶");
+				break;
+			case 3:System.out.println("本次消费金额为："+(money+10));
+				   System.out.println("成功换购5公斤面粉");
+				break;
+			case 4:System.out.println("本次消费金额为："+money);
+			System.out.println("换购失败！");
+				break;
+			case 5:System.out.println("本次消费金额为："+money);
+			System.out.println("换购失败！");
+				break;
+			default:System.out.println("换购失败！");
+			break;
+			}
+		}else if (money>=200) {
+			switch(xz) {
+			case 1:System.out.println("本次消费金额为："+(money+2));
+				   System.out.println("成功换购百事可乐饮料一瓶");
+				break;
+			case 2:System.out.println("本次消费金额为："+(money+3));
+			       System.out.println("成功换购500ml可乐一瓶");
+				break;
+			case 3:System.out.println("本次消费金额为："+(money+10));
+				   System.out.println("成功换购5公斤面粉");
+				break;
+			case 4:System.out.println("本次消费金额为："+(money+10));
+				   System.out.println("成功换购一个苏波尔炒菜锅");
+				break;
+			case 5:System.out.println("本次消费金额为："+(money+20));
+				   System.out.println("成功换购欧莱雅爽肤水饮料一瓶");
+				break;
+			default:System.out.println("换购失败！");
+			break;
+			}
+		}
+	}
+	
+	public static void zhekou() {
+		double money = 0;
+		Scanner sc = new Scanner(System.in);	
+		System.out.println("请输入是否是会员：是（y）否（其它字符）");
+		String st= sc.next();
+		if(st.equals("y")) {
+			System.out.println("请输入购物金额：");
+			double db = sc.nextDouble();
+			if(db>200) {
+				money = db*0.75;
+			}else{
+				money = db*0.8;
+			}
+			System.out.println("实际支付："+money);
+		}else {
+			System.out.println("请输入购物金额：");
+			double db = sc.nextDouble();
+			if(db>200) {
+				money = db*0.9;
+			}else{
+				money = db;
+			}
+			System.out.println("实际支付："+money);
+		}
+	}
+	
+	public static void money() {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("请输入基本工资");
+		int mon = sc.nextInt();
+		double sum = mon+mon*0.04+mon*0.02;
+		System.out.print("实际发的工资为："+sum);
+	}
+	public static void luck() {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("请输入会员卡号：");
+		int care = sc.nextInt();
+		if( (care/1000)+(care/100%10)+(care/10%10)+(care%10)>20 )
+		{
+			System.out.println("恭喜你成为幸运会员！");
+		}
+		else {System.out.println("欢迎下次光临！");}
+		
+	}
+	
+	public static void print1() {
+		System.out.println("***********我爱Shopping管理系统*************");
+		System.out.println("             1.登录系统                                                           ");
+		System.out.println("             2.退出系统                                                           ");
+		System.out.println("****************************************");
+		System.out.println("***输入选择：");
+	}
+	
+	public static void print2() {
+		System.out.println("           我爱Shopping管理系统                                       ");
+		System.out.println("****************************************");
+		System.out.println("             1.客户信息管理                                                    ");
+		System.out.println("             2.购物结算                                                           ");
+		System.out.println("             3.真情回馈                                                           ");
+		System.out.println("             4.注销                                                                   ");
+		System.out.println("****************************************");
+		System.out.println("***输入选择：");
+	}
+	
+	public static void print3() {
+		System.out.println("     我爱Shopping管理系统>>客户信息管理                           ");
+		System.out.println("****************************************");
+		System.out.println("             1.显示所有客户信息                                           ");
+		System.out.println("             2.增加客户信息                                                   ");
+		System.out.println("             3.修改                                                                   ");
+		System.out.println("             4.查询客户信息                                                   ");
+		System.out.println("             5.返回上一界面                                                   ");
+		System.out.println("****************************************");
+		System.out.println("***输入选择：");
+	}
+
+}

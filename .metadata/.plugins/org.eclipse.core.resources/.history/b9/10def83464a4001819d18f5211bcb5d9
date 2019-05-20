@@ -1,0 +1,14 @@
+package com.ghgj.lensson1.demo;
+
+
+public class TestFileWriter {
+
+	public static void main(String[] args) throws Exception{
+		
+		TestFileWriter fw = new TestFileWriter("F:\\eclipse\\haha.txt");
+		//BufferedWriter bw = new BufferedWriter(fw);
+		char [] a="ºÃºÃÑ§Ï°java".toCharArray();
+		//bw.wait(a,0,a.length);
+	}
+
+}

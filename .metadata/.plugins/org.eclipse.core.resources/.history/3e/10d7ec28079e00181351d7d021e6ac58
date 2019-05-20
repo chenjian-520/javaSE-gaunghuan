@@ -1,0 +1,26 @@
+package com.ghgj.lesson7.Map;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+public class CollevtionsList {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		funstion();
+	}
+	
+	public static void funstion() {
+		List<String> list = new ArrayList<String>();
+		list.add("asasd");
+		list.add("sasd");
+		list.add("5sd");
+		list.add("4sd");
+		list.add("8asd");
+		list.add("9sasd");
+		System.out.println(list);
+		Collections.sort(list);
+	}
+
+}

@@ -1,0 +1,53 @@
+package com.ghgj.lesson2.file;
+
+import java.io.FileOutputStream;
+import java.io.IOException;
+
+
+/*
+ * 字节输出流
+ *   java.io.OutputStream 所以字节流的超类
+ *   作用： 从java中写出文件
+ *   字节
+ *   可以写任意文件
+ *   
+ * 	 write(int b)
+ *   write(byte[] b)
+ *   write(byte[] b ,int,int)  int 开始索引  int 长度  
+ * 	 close()关闭流对象 释放流相关资源
+ * 
+ *   流对象使用步骤
+ *   1.创建流子类对象绑定数据目的
+ *   2.调用对象方法write写
+ *   3.close释放资源
+ *   
+ */
+class Box <T>{
+	T height;
+	T wight;
+	public Box(T height, T wight) {
+		super();
+		this.height = height;
+		this.wight = wight;
+	}
+}
+
+public class OutputStreamDemo {
+	
+	public static void main(String[] args) throws IOException {
+		FileOut();
+		Box<String> bo = new Box<>(" "," ");
+		bo.height = "sdf";
+	}
+	//子类 FileOutputStream
+	public static void FileOut() throws  IOException{
+		FileOutputStream fos = new FileOutputStream("F:\\eclipse\\a.txt");
+		//流对象方法write写数据  1个字节
+		fos.write(100);
+	
+		
+		//关闭资源
+		fos.close();
+	}
+}
+

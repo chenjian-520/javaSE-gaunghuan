@@ -1,0 +1,21 @@
+package com.ghgj.lesson2.day4;
+
+public class Day4 {
+	public static void main(String[] agrs) {
+	/*	int i =0;
+		while(i<5) {
+			System.out.println("* * * *");
+			i++;
+		}*/
+		Day4.demo1();
+		
+	}
+	public static void demo1() {
+		int i =0;
+		while(i<5) {
+			i++;
+			System.out.println(i);
+			
+		}
+	}
+}

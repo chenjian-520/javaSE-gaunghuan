@@ -1,0 +1,75 @@
+package com.ghgj.lesson2.day4;
+
+import java.util.Scanner;
+
+public class Day4 {
+	public static void main(String[] agrs) {
+	/*	int i =0;
+		while(i<5) {
+			System.out.println("* * * *");
+			i++;
+		}*/
+		Day4.demo4();
+		
+	}
+	
+	public static void demo4() {
+		Scanner sc = new Scanner(System.in);
+	   int shsh=2;
+		System.out.println("请输入一个数");
+		int a = sc.nextInt();
+		int count = 0 ;
+		
+		while(shsh!=0) {
+			  shsh=a/10;
+			count++;
+			
+		}
+		System.out.println(count);
+	}
+	
+	public static void demo3() {
+		Scanner sc = new Scanner(System.in);
+		boolean flag = true;
+		while(flag) {
+			System.out.println("请输入一个数");
+			String a = sc.next();
+			System.out.println(a+"是"+a.length()+"位数");
+		}
+		
+	}
+	
+	public static void demo2() {
+		int i =0,sum=0;
+		Scanner sc = new Scanner(System.in);
+		while(i<3) {
+			System.out.print("请输入会员号：");
+			int a = sc.nextInt();
+			System.out.print("请输入生日：");
+			String st = sc.next();
+			System.out.print("请输入积分：");
+			int b = sc.nextInt();
+			if(a>9999||a<1000) {
+				System.out.println("输入错误");
+				
+			}else {
+				System.out.println(a+"\t"+st+"\t"+b);
+			}
+			i++;
+			sum+=i;
+		}
+		System.out.println("程序结束");
+	}
+	
+	
+	public static void demo1() {
+		int i =0,sum=0;
+		
+		while(i<5) {
+			i++;
+			System.out.println(i);
+			sum+=i;
+		}
+		System.out.println(sum);
+	}
+}

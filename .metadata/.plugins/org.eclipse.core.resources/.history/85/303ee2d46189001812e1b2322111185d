@@ -1,0 +1,52 @@
+package com.ghgj.lesson2.day3;
+
+import java.util.Scanner;
+
+public class Shop1 {
+	public static void main(String[] agrs) {
+		Shop1.luck();
+		
+	}
+	public static void luck() {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("请输入会员卡号：");
+		int care = sc.nextInt();
+		if( (care/1000)+(care/100%10)+(care/10%10)+(care%10)>20 )
+		{
+			System.out.println("恭喜你成为幸运会员！");
+		}
+		
+	}
+	
+	public static void print1() {
+		System.out.println("***********我爱Shopping管理系统*************");
+		System.out.println("             1.登录系统                                                           ");
+		System.out.println("             2.退出系统                                                           ");
+		System.out.println("****************************************");
+		System.out.println("***输入选择：");
+	}
+	
+	public static void print2() {
+		System.out.println("           我爱Shopping管理系统                                       ");
+		System.out.println("****************************************");
+		System.out.println("             1.客户信息管理                                                    ");
+		System.out.println("             2.购物结算                                                           ");
+		System.out.println("             3.真情回馈                                                           ");
+		System.out.println("             4.注销                                                                   ");
+		System.out.println("****************************************");
+		System.out.println("***输入选择：");
+	}
+	
+	public static void print3() {
+		System.out.println("     我爱Shopping管理系统>>客户信息管理                           ");
+		System.out.println("****************************************");
+		System.out.println("             1.显示所有客户信息                                           ");
+		System.out.println("             2.增加客户信息                                                   ");
+		System.out.println("             3.修改                                                                   ");
+		System.out.println("             4.查询客户信息                                                   ");
+		System.out.println("             5.返回上一界面                                                   ");
+		System.out.println("****************************************");
+		System.out.println("***输入选择：");
+	}
+
+}

@@ -1,0 +1,109 @@
+package com.ghgj.lesson5.work;
+/**
+ * Ò»¸öÀý×Ó ³Â½¡
+ * @author ASUS
+ * @version 2018-12-12 
+ */
+public class Demo {
+	public static void main(String[] args) throws Exception {
+		System.out.println("     /\\o      ");
+		System.out.println("    /  \\    ");
+		System.out.println("   /    \\  ");
+		System.out.println("  /      \\ ");
+		System.out.println(" /        \\  ");
+		System.out.println("/          \\ ");
+		System.out.println("                ");
+		System.out.println("                ");
+		Thread.sleep(1000);
+		
+		System.out.println("     /\\      ");
+		System.out.println("    /  \\o    ");
+		System.out.println("   /    \\  ");
+		System.out.println("  /      \\ ");
+		System.out.println(" /        \\  ");
+		System.out.println("/          \\ ");
+		System.out.println("                ");
+		System.out.println("                ");
+		Thread.sleep(1000);
+		
+		System.out.println("     /\\      ");
+		System.out.println("    /  \\    ");
+		System.out.println("   /    \\o  ");
+		System.out.println("  /      \\ ");
+		System.out.println(" /        \\  ");
+		System.out.println("/          \\ ");
+		System.out.println("                ");
+		System.out.println("                ");
+		Thread.sleep(1000);
+		
+		System.out.println("     /\\      ");
+		System.out.println("    /  \\    ");
+		System.out.println("   /    \\  ");
+		System.out.println("  /      \\o ");
+		System.out.println(" /        \\  ");
+		System.out.println("/          \\ ");
+		System.out.println("                ");
+		System.out.println("                ");
+		Thread.sleep(1000);
+		
+		System.out.println("     /\\      ");
+		System.out.println("    /  \\    ");
+		System.out.println("   /    \\  ");
+		System.out.println("  /      \\ ");
+		System.out.println(" /        \\o  ");
+		System.out.println("/          \\ ");
+		System.out.println("                ");
+		System.out.println("                "); 
+		Thread.sleep(1000);
+		
+		System.out.println("     /\\      ");
+		System.out.println("    /  \\    ");
+		System.out.println("   /    \\  ");
+		System.out.println("  /      \\ ");
+		System.out.println(" /        \\  ");
+		System.out.println("/          \\o ");
+		System.out.println("                ");
+		System.out.println("                ");
+		Thread.sleep(1000);
+		
+		System.out.println("     /\\      ");
+		System.out.println("    /  \\    ");
+		System.out.println("   /    \\  ");
+		System.out.println("  /      \\ ");
+		System.out.println(" /        \\  ");
+		System.out.println("/          \\ ");
+		System.out.println("               o ");
+		System.out.println("                ");
+		Thread.sleep(1000);
+		
+		System.out.println("     /\\      ");
+		System.out.println("    /  \\    ");
+		System.out.println("   /    \\  ");
+		System.out.println("  /      \\ ");
+		System.out.println(" /        \\  ");
+		System.out.println("/          \\ ");
+		System.out.println("                ");
+		System.out.println("                   o");
+		Thread.sleep(1000);
+		
+		System.out.println("     /\\      ");
+		System.out.println("    /  \\    ");
+		System.out.println("   /    \\  ");
+		System.out.println("  /      \\ ");
+		System.out.println(" /        \\  ");
+		System.out.println("/          \\ ");
+		System.out.println("                ");
+		System.out.println("                        o");
+		Thread.sleep(1000);
+		
+		System.out.println("     /\\      ");
+		System.out.println("    /  \\    ");
+		System.out.println("   /    \\  ");
+		System.out.println("  /      \\ ");
+		System.out.println(" /        \\  ");
+		System.out.println("/          \\ ");
+		System.out.println("                ");
+		System.out.println("                                  o");
+		Thread.sleep(1000);
+	}
+}

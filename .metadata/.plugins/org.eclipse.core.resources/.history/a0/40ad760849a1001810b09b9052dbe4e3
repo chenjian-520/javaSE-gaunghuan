@@ -1,0 +1,10 @@
+package com.ghgj.lesson2.file;
+
+public class CopyByte {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

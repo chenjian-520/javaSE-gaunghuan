@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;com.ghgj.lesson1.JavaPhasedOperation&apos; to &apos;com.ghgj.lesson1.JavaPhasedOperation2&apos;&#x0D;&#x0A;- Original project: &apos;ghgj_1807_5&apos;&#x0D;&#x0A;- Original element: &apos;ghgj_1807_5/src/com.ghgj.lesson1.JavaPhasedOperation&apos;&#x0D;&#x0A;- Renamed element: &apos;ghgj_1807_5/src/com.ghgj.lesson1.JavaPhasedOperation2&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;com.ghgj.lesson1.JavaPhasedOperation&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;com.ghgj.lesson1.JavaPhasedOperation" name="com.ghgj.lesson1.JavaPhasedOperation2" qualified="false" references="true" stamp="1534850603776" textual="false" version="1.0"/>
+</session>
